@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans bg-gray-100 text-gray-800;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-gray-900;
+}
+
+p {
+  @apply text-gray-600;
+}
+
+a {
+  @apply text-blue-500 hover:underline;
+}
+
+.container {
+  @apply max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8;
+}
+
+.card {
+  @apply bg-white shadow-md rounded-md p-4 mb-4;
+}
+
+.button {
+  @apply px-4 py-2 rounded-md font-medium text-white transition duration-200;
+}
+
+.button-primary {
+  @apply bg-blue-500 hover:bg-blue-600;
+}
+
+.button-secondary {
+  @apply bg-gray-500 hover:bg-gray-600;
+}
+
+.button-tertiary {
+  @apply bg-gray-300 hover:bg-gray-400;
+}
+
+.button-danger {
+  @apply bg-red-500 hover:bg-red-600;
+}
+
+.input {
+  @apply shadow-sm border rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 block w-full sm:text-sm border-gray-300;
+}
+
+.input-error {
+  @apply border-red-500;
+}
+
+.loading {
+  @apply w-12 h-12 rounded-full border-4 border-t-4 border-gray-400 animate-spin;
+}
+
+.dark {
+  @apply bg-gray-800 text-white;
+}
